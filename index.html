@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starion AI — The AI Receptionist That Books Patients While You Sleep</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="canonical" href="https://starion.site/index.html">
+  <meta name="description" content="Starion AI answers every call and chat for dental clinics, qualifies new patients and books them into your calendar. $0 setup pilot, installed in 14 days.">
+  <meta name="keywords" content="Starion AI, AI Automation Agency, AI Chatbots, StarBot, StarLead, StarBook, StarMail, StarFlow, StarAds, Workflow Automation, Piyanshu Singh">
+  <meta name="author" content="Piyanshu Singh">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { DEFAULT: '#0a0e27', 50: '#f8fafc', 100: '#f1f5f9', 800: '#111739', 900: '#0a0e27' },
+            surface: '#f8fafc',
+            bordercol: '#e2e8f0',
+            gold: { DEFAULT: '#f59e0b', hover: '#d97706', light: '#fef3c7', muted: '#fbbf24' },
+            secondary: '#64748b'
+          },
+          fontFamily: { sans: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --surface: #f8fafc;
+      --border: #e2e8f0;
+      --text-primary: #0a0e27;
+      --text-secondary: #64748b;
+      --accent: #f59e0b;
+      --accent-hover: #d97706;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #ffffff;
+      color: #0a0e27;
+      line-height: 1.7;
+      font-size: 17px;
+      overflow-x: hidden;
+      opacity: 0;
+      animation: pageFadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    @keyframes pageFadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+    .site-nav { transition: background-color 0.3s ease, border-color 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease; }
+    .site-nav.scrolled { background-color: rgba(255,255,255,0.94); backdrop-filter: blur(12px); border-bottom: 1px solid #e2e8f0; box-shadow: 0 4px 20px -2px rgba(10,14,39,0.04); }
+    .animated-link { position: relative; display: inline-block; text-decoration: none; }
+    .animated-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0%; height: 2px; background-color: #f59e0b; transition: width 0.28s cubic-bezier(0.4,0,0.2,1); }
+    .animated-link:hover::after, .animated-link.active::after { width: 100%; }
+    .btn-gold {
+      background-color: #f59e0b; color: #0a0e27; font-weight: 600; transition: all 0.25s cubic-bezier(0.16,1,0.3,1);
+      display: inline-flex; align-items: center; justify-content: center;
+    }
+    .btn-gold:hover { background-color: #d97706; transform: scale(1.02); box-shadow: 0 4px 16px rgba(245,158,11,0.35); color: #ffffff; }
+    .btn-outline { background-color: transparent; border: 1px solid #0a0e27; color: #0a0e27; font-weight: 600; transition: all 0.25s cubic-bezier(0.16,1,0.3,1); display: inline-flex; align-items: center; justify-content: center; }
+    .btn-outline:hover { background-color: #0a0e27; color: #ffffff; transform: scale(1.02); box-shadow: 0 4px 14px rgba(10,14,39,0.15); }
+    .page-fade-out { opacity: 0 !important; transform: translateY(-6px) !important; transition: opacity 0.35s ease, transform 0.35s ease !important; }
+  </style>
+  <link rel="stylesheet" href="assets/css/theme-dark.css">
+  <link rel="stylesheet" href="assets/css/site-extras.css">
+  <link rel="stylesheet" href="assets/css/conversion.css">
+  <link rel="stylesheet" href="assets/css/starion-enterprise.css">
+  <script src="assets/js/roi.js" defer></script>
+  <script src="assets/js/theme-fx.js" defer></script>
+  <script src="assets/js/site-fx.js" defer></script>
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+  <link rel="stylesheet" href="assets/css/starion-v5.css">
+</head>
+<body class="bg-white text-[#0a0e27] antialiased">
+  <header class="v5-nav">
+  <div class="v5-nav-in">
+    <a href="index.html" aria-label="Starion AI home"><img src="assets/images/starion-logo.jpg" onerror="this.onerror=null;this.src='assets/images/starion-logo.svg'" alt="Starion AI" style="height:36px;width:auto"></a>
+    <nav class="v5-links" aria-label="Main">
+      <a href="index.html">Home</a>
+      <div class="v5-dd"><a href="services.html">Services</a>
+        <div class="v5-menu">
+          <a href="dental.html">Dental<small>AI receptionist for clinics</small></a>
+          <a href="outbound.html">Outbound<small>AI SDR that books sales calls</small></a>
+          <a href="core.html">Core<small>CRM, booking and email as one system</small></a>
+        </div></div>
+      <a href="partners.html">Partners</a>
+      <div class="v5-dd"><a href="about.html">Company</a>
+        <div class="v5-menu">
+          <a href="about.html">About</a>
+          <a href="case-studies.html">Case studies</a>
+          <a href="contact.html">Contact</a>
+        </div></div>
+    </nav>
+    <div class="v5-cta">
+      <a href="index.html#demo" class="v5-btn v5-btn-cyan">Live Demo</a>
+      <a href="https://cal.id/starion/one-on-one" target="_blank" rel="noopener noreferrer" class="v5-btn v5-btn-violet">Book a Call</a>
+    </div>
+    <button id="v5-toggle" class="v5-burger" type="button" aria-label="Toggle navigation menu" aria-controls="v5-drawer" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+  <div id="v5-drawer" class="v5-drawer">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a class="sub" href="dental.html">Dental</a><a class="sub" href="outbound.html">Outbound</a><a class="sub" href="core.html">Core</a>
+    <a href="partners.html">Partners</a>
+    <a href="about.html">About</a><a href="case-studies.html">Case studies</a><a href="contact.html">Contact</a>
+    <a class="v5-btn v5-btn-cyan" href="index.html#demo">Live Demo</a>
+    <a class="v5-btn v5-btn-violet" href="https://cal.id/starion/one-on-one" target="_blank" rel="noopener noreferrer">Book a Call</a>
+  </div>
+</header>
+
+  <main>
+<section class="v5-hero"><div class="v5-mesh" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="v5-wrap"><div class="v5-hero-grid">
+  <div>
+    <span class="v5-kicker">AI receptionist for dental clinics</span>
+    <h1>The AI Receptionist That Books Patients While You Sleep.</h1>
+    <p class="v5-lead">Starion answers every call and chat, qualifies new patients and books them straight into your calendar. We install it, test it and train your front desk in 14 days.</p>
+    <div class="v5-hero-cta">
+      <a href="#demo" class="v5-btn v5-btn-grad">See it on your website</a>
+      <a href="https://cal.id/starion/one-on-one" target="_blank" rel="noopener noreferrer" class="v5-btn v5-btn-ghost">Book a 15-minute call</a>
+    </div>
+    <p class="v5-note">$0 setup for the pilot. You pay the monthly fee only if it books 5 or more appointments.</p>
+  </div>
+  <div class="v5-glass v5-dash" role="img" aria-label="Example of the activity feed the AI receptionist produces">
+  <div class="v5-dash-top"><span class="v5-live"><i class="v5-dot"></i>Receptionist activity</span><span>Sample view</span></div>
+  <ul class="v5-feed">
+    <li><i class="v5-ico">📞</i><div><b>Call answered</b><span>New patient asking about Invisalign</span></div><em>11:42 PM</em></li>
+    <li><i class="v5-ico">📅</i><div><b>Appointment booked</b><span>Tomorrow, 2:00 PM · Consultation</span></div><em>11:44 PM</em></li>
+    <li><i class="v5-ico">✅</i><div><b>Lead added to CRM</b><span>Name, phone and treatment interest saved</span></div><em>11:44 PM</em></li>
+  </ul>
+  <p class="v5-dash-foot">Illustrative example of what the system logs. Not real patient data.</p>
+</div>
+</div></div></section>
+<div class="v5-strip" aria-label="Technology we build with"><div class="v5-wrap v5-strip-in">
+  <p>Built with</p><span class="w">OpenAI</span><span class="w">n8n</span><span class="w">Vercel</span><span class="w">Botpress</span><span class="w">Cal.com</span>
+</div></div>
+<section id="services" class="v5-sec"><div class="v5-wrap">
+  <div class="v5-car-head"><div><span class="v5-kicker">Services</span><h2 class="v5-h2">Three systems. One goal: a full calendar.</h2></div>
+    <div style="display:flex;gap:.6rem;align-items:center"><span class="v5-hint">Drag or use the arrows</span>
+    <button class="v5-btn v5-btn-ghost" style="padding:.55rem .9rem" data-car-prev aria-label="Previous">←</button>
+    <button class="v5-btn v5-btn-ghost" style="padding:.55rem .9rem" data-car-next aria-label="Next">→</button></div></div>
+  <div class="v5-car"><div class="v5-track" tabindex="0" aria-label="Services">
+    <a class="v5-card v5-glass" href="dental.html"><h3>Starion Voice</h3><p>A 24/7 voice and chat receptionist for dental clinics.</p>
+      <ul><li>Answers every call and chat</li><li>Qualifies new patients</li><li>Books into your calendar</li><li>Hands complex cases to your team</li></ul>
+      <div class="price">$297 – $1,200 / month</div><div class="go">See Dental →</div></a>
+    <a class="v5-card v5-glass" href="outbound.html"><h3>Starion Outbound</h3><p>An AI SDR that finds prospects, follows up and books sales calls.</p>
+      <ul><li>Builds your prospect list</li><li>Personalised email sequences</li><li>Automatic follow-ups</li><li>Qualified calls on your calendar</li></ul>
+      <div class="price">$3,000 – $10,000 / month</div><div class="go">See Outbound →</div></a>
+    <a class="v5-card v5-glass" href="core.html"><h3>Starion Core</h3><p>CRM, booking and email connected as one revenue system.</p>
+      <ul><li>One source of truth for every lead</li><li>Booking that writes back to your CRM</li><li>Emails triggered by real activity</li><li>No manual copy-pasting</li></ul>
+      <div class="price">$3,000 – $10,000 setup</div><div class="go">See Core →</div></a>
+  </div></div>
+</div></section>
+<section id="demo" class="v5-sec v5-demo"><div class="v5-wrap"><div class="v5-demo-grid">
+  <div>
+    <span class="v5-kicker">Live demo</span>
+    <h2 class="v5-h2">See it on your website.</h2>
+    <p class="v5-lead" style="margin-top:1rem">Enter your clinic name and we build a private AI receptionist demo trained on your services and opening hours. The link arrives by email.</p>
+    <ol class="v5-steps">
+      <li><div><b>Enter your clinic name</b><span>Takes under a minute. No card, no call.</span></div></li>
+      <li><div><b>We build your AI</b><span>A custom demo is generated for your practice.</span></div></li>
+      <li><div><b>Get your live link</b><span>Check your email for a Vercel demo link you can try straight away.</span></div></li>
+    </ol>
+  </div>
+  <div class="v5-glass v5-frame">
+    <iframe src="https://tally.so/embed/YjRj8q?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" title="Request your custom AI receptionist demo" loading="lazy"></iframe>
+  </div>
+</div></div></section>
+<section id="agent-team" class="agent-section"><div class="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8"><div class="agent-head"><span class="inline-block text-xs font-bold uppercase tracking-wider text-[#f59e0b]">THE MULTI-AGENT TEAM</span><h2>Don't Buy 6 Tools. <span class="sb-grad">Hire an AI Team.</span></h2><p>Four specialised agents, one orchestrated system, built, run and optimised by Starion.</p></div><div class="agent-grid"><div class="agent-card"><span class="agent-tag">Agent 01</span><div><span class="sb-sticker"><i class="sb-icon" style="--icon:url(/assets/icons/target.svg)"></i></span></div><h3>The SDR</h3><p>Finds, enriches and contacts your ideal prospects around the clock. Personalised outreach and instant follow-ups, with zero idle hours.</p><div class="agent-status"><i></i>Prospecting live</div></div><div class="agent-card"><span class="agent-tag">Agent 02</span><div><span class="sb-sticker"><i class="sb-icon" style="--icon:url(/assets/icons/phone.svg)"></i></span></div><h3>Receptionist</h3><p>Answers every call and chat in seconds. Qualifies visitors, handles questions and hands warm requests to your team.</p><div class="agent-status"><i></i>Answering 24/7</div></div><div class="agent-card"><span class="agent-tag">Agent 03</span><div><span class="sb-sticker"><i class="sb-icon" style="--icon:url(/assets/icons/calendar.svg)"></i></span></div><h3>Scheduler</h3><p>Books, confirms and reminds. Fills your calendar with qualified meetings and cuts no-shows without a manual email.</p><div class="agent-status"><i></i>Calendar synced</div></div><div class="agent-card"><span class="agent-tag">Agent 04</span><div><span class="sb-sticker"><i class="sb-icon" style="--icon:url(/assets/icons/workflow.svg)"></i></span></div><h3>Orchestrator</h3><p>Coordinates the whole team. Routes leads, syncs your CRM, escalates hot deals and reports revenue in real time.</p><div class="agent-status"><i></i>Team coordinated</div></div></div></div></section>
+<section class="py-8"><div class="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8"><div class="stat-banner-lg">Our AI systems are designed to save businesses an average of <b>20+ hours/week</b> and capture up to <b>$50,000</b> in previously lost annual revenue.<small>Design targets based on example maths, not a promise of results. <a href="#systems-roi" class="underline">See how we calculate your ROI below.</a></small></div></div></section>
+<section id="systems-roi" class="py-20"><div class="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8"><div class="text-center max-w-2xl mx-auto mb-12"><span class="inline-block text-xs font-bold uppercase tracking-wider text-[#f59e0b] mb-4">SIX SYSTEMS</span><h2 class="text-3xl sm:text-4xl font-black">Everything you need to grow, <span class="sb-grad">one partner</span></h2><p class="mt-4 text-[#64748b]">Start with one system or combine them. Each page has full details, deliverables and pricing.</p></div><div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"><a href="dental.html" class="star-card block"><div class="text-4xl mb-4 sb-float"><span class="sb-sticker"><i class="sb-icon " style="--icon:url(/assets/icons/bot.svg)"></i></span></div><img src="assets/images/starbot-demo.svg" alt="StarBot preview" loading="lazy" class="w-full rounded-xl mb-4 border border-white/10" style="aspect-ratio:16/9;object-fit:cover"><h3 class="text-xl font-bold">StarBot</h3><p class="text-[#f59e0b] font-semibold mt-1">AI Chatbots That Never Sleep</p><p class="text-sm font-semibold mt-2 sb-grad inline-block">$100 setup + $100/month <span class="pfp-link" role="button" tabindex="0" data-pfp="starbot">Or Pay-for-Performance</span></p><ul class="card-bullets"><li>Projected ROI: 400% - 1,200% annually.</li></ul><p class="mt-3 text-[#64748b] text-[15px] leading-7">Your website loses leads after hours because no one replies fast enough. StarBot answers instantly, captures details, and books appointments 24/7.</p><span class="mt-4 inline-block text-[#f59e0b] font-semibold">Explore StarBot →</span></a><a href="outbound.html" class="star-card block"><div class="text-4xl mb-4 sb-float"><span class="sb-sticker"><i class="sb-icon " style="--icon:url(/assets/icons/target.svg)"></i></span></div><img src="assets/images/starlead-dashboard.svg" alt="StarLead preview" loading="lazy" class="w-full rounded-xl mb-4 border border-white/10" style="aspect-ratio:16/9;object-fit:cover"><h3 class="text-xl font-bold">StarLead</h3><p class="text-[#f59e0b] font-semibold mt-1">Qualified Leads on Autopilot</p><p class="text-sm font-semibold mt-2 sb-grad inline-block">$3,000 – $10,000/month <span class="pfp-link" role="button" tabindex="0" data-pfp="starlead">Or Pay-for-Performance</span></p><ul class="card-bullets"><li>Projected ROI: 400% - 1,200% annually.</li></ul><p class="mt-3 text-[#64748b] text-[15px] leading-7">We find the right businesses, send personalized cold emails, follow up automatically, and book calls for you.</p><span class="mt-4 inline-block text-[#f59e0b] font-semibold">Explore StarLead →</span></a><a href="starbook.html" class="star-card block"><div class="text-4xl mb-4 sb-float"><span class="sb-sticker"><i class="sb-icon " style="--icon:url(/assets/icons/calendar.svg)"></i></span></div><img src="assets/images/starbook-calcom.svg" alt="StarBook preview" loading="lazy" class="w-full rounded-xl mb-4 border border-white/10" style="aspect-ratio:16/9;object-fit:cover"><h3 class="text-xl font-bold">StarBook</h3><p class="text-[#f59e0b] font-semibold mt-1">Bookings on Autopilot</p><p class="text-sm font-semibold mt-2 sb-grad inline-block">$300 setup + $100/month <span class="pfp-link" role="button" tabindex="0" data-pfp="starbook">Or Pay-for-Performance</span></p><ul class="card-bullets"><li>Projected ROI: 400% - 1,200% annually.</li></ul><p class="mt-3 text-[#64748b] text-[15px] leading-7">Let customers book themselves, send automatic reminders, and cut no-shows — without phone tag.</p><span class="mt-4 inline-block text-[#f59e0b] font-semibold">Explore StarBook →</span></a><a href="starmail.html" class="star-card block"><div class="text-4xl mb-4 sb-float"><span class="sb-sticker"><i class="sb-icon " style="--icon:url(/assets/icons/mail.svg)"></i></span></div><img src="assets/images/starmail-workflow.svg" alt="StarMail preview" loading="lazy" class="w-full rounded-xl mb-4 border border-white/10" style="aspect-ratio:16/9;object-fit:cover"><h3 class="text-xl font-bold">StarMail</h3><p class="text-[#f59e0b] font-semibold mt-1">Emails That Convert</p><p class="text-sm font-semibold mt-2 sb-grad inline-block">$500 setup + $300/month <span class="pfp-link" role="button" tabindex="0" data-pfp="starmail">Or Pay-for-Performance</span></p><ul class="card-bullets"><li>Projected ROI: 400% - 1,200% annually.</li></ul><p class="mt-3 text-[#64748b] text-[15px] leading-7">Automated email sequences that welcome new subscribers, recover abandoned carts, and bring customers back.</p><span class="mt-4 inline-block text-[#f59e0b] font-semibold">Explore StarMail →</span></a><a href="starflow.html" class="star-card block"><div class="text-4xl mb-4 sb-float"><span class="sb-sticker"><i class="sb-icon " style="--icon:url(/assets/icons/settings.svg)"></i></span></div><img src="assets/images/starflow-n8n.svg" alt="StarFlow preview" loading="lazy" class="w-full rounded-xl mb-4 border border-white/10" style="aspect-ratio:16/9;object-fit:cover"><h3 class="text-xl font-bold">StarFlow</h3><p class="text-[#f59e0b] font-semibold mt-1">Your Website and Workflows, Automated</p><p class="text-sm font-semibold mt-2 sb-grad inline-block">$2,000 – $8,000 Setup <span class="pfp-link" role="button" tabindex="0" data-pfp="starflow">Or Pay-for-Performance</span></p><ul class="card-bullets"><li>Projected ROI: 400% - 1,200% annually.</li></ul><p class="mt-3 text-[#64748b] text-[15px] leading-7">Connect your forms, CRM, email, and calendar so leads are captured, replied to, and followed up automatically.</p><span class="mt-4 inline-block text-[#f59e0b] font-semibold">Explore StarFlow →</span></a><a href="starads.html" class="star-card block"><div class="text-4xl mb-4 sb-float"><span class="sb-sticker"><i class="sb-icon " style="--icon:url(/assets/icons/megaphone.svg)"></i></span></div><img src="assets/images/starads-dashboard.svg" alt="StarAds preview" loading="lazy" class="w-full rounded-xl mb-4 border border-white/10" style="aspect-ratio:16/9;object-fit:cover"><h3 class="text-xl font-bold">StarAds</h3><p class="text-[#f59e0b] font-semibold mt-1">AI-Assisted Ad Campaigns</p><p class="text-sm font-semibold mt-2 sb-grad inline-block">$500/mo + 10% ad spend <span class="pfp-link" role="button" tabindex="0" data-pfp="starads">Or Pay-for-Performance</span></p><ul class="card-bullets"><li>Projected ROI: 400% - 1,200% annually.</li></ul><p class="mt-3 text-[#64748b] text-[15px] leading-7">We create, launch, and optimize Meta and Google ads with AI-assisted copy and creative — focused on cost per lead and ROI.</p><span class="mt-4 inline-block text-[#f59e0b] font-semibold">Explore StarAds →</span></a></div></div></section>
+<section class="v5-sec" style="padding:2rem 0"><div class="v5-wrap"><a class="v5-banner" href="dental.html#pricing">
+  <div><h2>Try it before you pay setup.</h2><p>14-day pilot, $0 setup. You pay the monthly fee only if it books 5 or more appointments.</p></div>
+  <span class="v5-btn v5-btn-grad">See pricing</span></a></div></section>
+<section id="math-of-doing-nothing" class="py-20 doing-nothing"><div class="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8"><div class="text-center max-w-3xl mx-auto mb-10"><span class="inline-block text-xs font-bold uppercase tracking-wider text-[#f59e0b] mb-4">COST OF INACTION</span><h2 class="text-4xl sm:text-5xl font-black">The Math of <span class="sb-grad">Doing Nothing.</span></h2><p class="dn-copy">If you are losing just 3 leads a week, that is <b>$234,000 lost annually</b>. We fix that.</p></div><div class="roi-calc" data-service="all"></div></div></section>
+<section id="industries" class="py-20"><div class="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8"><div class="text-center max-w-2xl mx-auto mb-12"><span class="inline-block text-xs font-bold uppercase tracking-wider text-[#f59e0b] mb-4">INDUSTRIES</span><h2 class="text-3xl sm:text-4xl font-black">Built for <span class="sb-grad">your industry</span></h2><p class="mt-4 text-[#64748b]">Pick your industry to see how Starion fits. Healthcare is live today, and more industries are on the way.</p></div>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="star-card"><span class="sb-sticker"><i class="sb-icon " style="--icon:url(/assets/icons/stethoscope.svg)"></i></span><h3 class="text-xl font-bold mt-4">Healthcare</h3><p class="mt-2 text-[#64748b]">AI receptionists, after-hours call capture and appointment booking for clinics, so new patients are never missed.</p><a href="dental.html" class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-[#f59e0b] hover:underline">Explore Dental &rarr;</a></div>
+<div class="star-card"><span class="sb-sticker"><i class="sb-icon " style="--icon:url(/assets/icons/landmark.svg)"></i></span><h3 class="text-xl font-bold mt-4">Real Estate</h3><p class="mt-2 text-[#64748b]">Instant replies to property enquiries, viewing bookings and follow-up that keeps every lead warm.</p><a href="services.html" class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-[#f59e0b] hover:underline">See services &rarr;</a></div>
+<div class="star-card"><span class="sb-sticker"><i class="sb-icon " style="--icon:url(/assets/icons/building-2.svg)"></i></span><h3 class="text-xl font-bold mt-4">Enterprise</h3><p class="mt-2 text-[#64748b]">Workflow automation, knowledge assistants and reporting that take repetitive work off larger teams.</p><a href="services.html" class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-[#f59e0b] hover:underline">See services &rarr;</a></div>
+</div></div></section>
+<section class="py-20"><div class="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8"><div class="text-center max-w-2xl mx-auto mb-12"><span class="inline-block text-xs font-bold uppercase tracking-wider text-[#f59e0b] mb-4">WHY STARION</span><h2 class="text-3xl sm:text-4xl font-black">Built to <span class="sb-grad">work</span>, not to sit in a slide deck</h2><p class="mt-4 text-[#64748b]">Straight answers, clear prices and systems that go live quickly.</p></div><div class="grid md:grid-cols-3 gap-6"><div class="star-card"><div class="text-3xl mb-3 sb-float"><span class="sb-sticker"><i class="sb-icon " style="--icon:url(/assets/icons/compass.svg)"></i></span></div><h3 class="text-lg font-bold">One partner, start to finish</h3><p class="mt-2 text-[#64748b] text-[15px] leading-7">The same team scopes, builds, connects and looks after your system, so nothing gets lost between suppliers.</p></div><div class="star-card"><div class="text-3xl mb-3 sb-float"><span class="sb-sticker"><i class="sb-icon " style="--icon:url(/assets/icons/receipt.svg)"></i></span></div><h3 class="text-lg font-bold">Prices in writing</h3><p class="mt-2 text-[#64748b] text-[15px] leading-7">A fixed setup fee and a simple monthly plan, agreed before we start. No surprise extras.</p></div><div class="star-card"><div class="text-3xl mb-3 sb-float"><span class="sb-sticker"><i class="sb-icon " style="--icon:url(/assets/icons/rocket.svg)"></i></span></div><h3 class="text-lg font-bold">Live in weeks</h3><p class="mt-2 text-[#64748b] text-[15px] leading-7">Most single systems go live within one to two weeks, then we keep tuning them as your business grows.</p></div></div></div></section>
+<section class="py-20"><div class="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8"><div class="text-center max-w-2xl mx-auto mb-12"><span class="inline-block text-xs font-bold uppercase tracking-wider text-[#f59e0b] mb-4">WHAT AUTOMATION DOES</span><h2 class="text-3xl sm:text-4xl font-black">Five ways we give you <span class="sb-grad">time back</span></h2></div><div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"><div class="star-card"><div class="text-3xl mb-3 sb-float">⏱️</div><h3 class="text-lg font-bold">Takes over repetitive tasks</h3><p class="mt-2 text-[#64748b] text-[15px] leading-7">Reminders, follow-ups, data entry and status updates run on their own while your team handles real work.</p></div><div class="star-card"><div class="text-3xl mb-3 sb-float"><span class="sb-sticker"><i class="sb-icon " style="--icon:url(/assets/icons/zap.svg)"></i></span></div><h3 class="text-lg font-bold">Replies the moment someone asks</h3><p class="mt-2 text-[#64748b] text-[15px] leading-7">Visitors get an answer straight away, day or night, instead of waiting for the next working morning.</p></div><div class="star-card"><div class="text-3xl mb-3 sb-float"><span class="sb-sticker"><i class="sb-icon " style="--icon:url(/assets/icons/link.svg)"></i></span></div><h3 class="text-lg font-bold">Joins your tools together</h3><p class="mt-2 text-[#64748b] text-[15px] leading-7">Forms, calendars, inboxes and sheets pass information to each other without copy and paste.</p></div><div class="star-card"><div class="text-3xl mb-3 sb-float"><span class="sb-sticker"><i class="sb-icon " style="--icon:url(/assets/icons/target.svg)"></i></span></div><h3 class="text-lg font-bold">Finds and warms up leads</h3><p class="mt-2 text-[#64748b] text-[15px] leading-7">Prospects are found, contacted and followed up with, and the interested ones land in your calendar.</p></div><div class="star-card"><div class="text-3xl mb-3 sb-float"><span class="sb-sticker"><i class="sb-icon " style="--icon:url(/assets/icons/search.svg)"></i></span></div><h3 class="text-lg font-bold">Shows what is working</h3><p class="mt-2 text-[#64748b] text-[15px] leading-7">Simple reports so you can see where enquiries come from and what is worth more effort.</p></div><a href="services.html" class="star-card block flex flex-col justify-center text-center"><p class="text-lg font-bold">See every system</p><p class="mt-2 text-[#f59e0b] font-semibold">Browse services →</p></a></div></div></section>
+<section class="py-20"><div class="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8"><div class="text-center mb-12"><span class="inline-block text-xs font-bold uppercase tracking-wider text-[#f59e0b] mb-4">HOW IT WORKS</span><h2 class="text-3xl sm:text-4xl font-black">From first call to <span class="sb-grad">live system</span> in weeks</h2></div><div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"><div class="star-card"><div class="w-10 h-10 rounded-full btn-gold font-bold mb-4">1</div><h3 class="text-lg font-bold">Free 15-min call</h3><p class="mt-2 text-[#64748b] text-[15px]">Tell us where time or leads are leaking. We'll say honestly whether automation helps.</p></div><div class="star-card"><div class="w-10 h-10 rounded-full btn-gold font-bold mb-4">2</div><h3 class="text-lg font-bold">Scope and quote</h3><p class="mt-2 text-[#64748b] text-[15px]">You get a fixed setup fee and monthly price in writing. No hidden extras.</p></div><div class="star-card"><div class="w-10 h-10 rounded-full btn-gold font-bold mb-4">3</div><h3 class="text-lg font-bold">Build and launch</h3><p class="mt-2 text-[#64748b] text-[15px]">We build, test and connect it to your tools, then train your team.</p></div><div class="star-card"><div class="w-10 h-10 rounded-full btn-gold font-bold mb-4">4</div><h3 class="text-lg font-bold">Monitor and improve</h3><p class="mt-2 text-[#64748b] text-[15px]">Monthly support and tuning so the system keeps working as you grow.</p></div></div></div></section>
+<section class="py-20"><div class="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8"><div class="text-center max-w-2xl mx-auto mb-12"><span class="inline-block text-xs font-bold uppercase tracking-wider text-[#f59e0b] mb-4">PLAYS WELL WITH OTHERS</span><h2 class="text-3xl sm:text-4xl font-black">Connects to the tools <span class="sb-grad">you already use</span></h2><p class="mt-4 text-[#64748b]">We plug into your day-to-day setup instead of asking you to start over.</p></div><div class="grid grid-cols-2 md:grid-cols-4 gap-4"><div class="star-card !p-4 flex items-center gap-3"><span class="text-2xl"><span class="sb-sticker sm"><i class="sb-icon " style="--icon:url(/assets/icons/file-text.svg)"></i></span></span><span class="font-semibold">Website forms</span></div><div class="star-card !p-4 flex items-center gap-3"><span class="text-2xl"><span class="sb-sticker sm"><i class="sb-icon " style="--icon:url(/assets/icons/folders.svg)"></i></span></span><span class="font-semibold">CRM &amp; contact lists</span></div><div class="star-card !p-4 flex items-center gap-3"><span class="text-2xl"><span class="sb-sticker sm"><i class="sb-icon " style="--icon:url(/assets/icons/calendar-days.svg)"></i></span></span><span class="font-semibold">Calendars</span></div><div class="star-card !p-4 flex items-center gap-3"><span class="text-2xl"><span class="sb-sticker sm"><i class="sb-icon " style="--icon:url(/assets/icons/mail-check.svg)"></i></span></span><span class="font-semibold">Email inboxes</span></div><div class="star-card !p-4 flex items-center gap-3"><span class="text-2xl"><span class="sb-sticker sm"><i class="sb-icon " style="--icon:url(/assets/icons/chart-column.svg)"></i></span></span><span class="font-semibold">Spreadsheets</span></div><div class="star-card !p-4 flex items-center gap-3"><span class="text-2xl"><span class="sb-sticker sm"><i class="sb-icon " style="--icon:url(/assets/icons/message-square.svg)"></i></span></span><span class="font-semibold">Messaging apps</span></div><div class="star-card !p-4 flex items-center gap-3"><span class="text-2xl"><span class="sb-sticker sm"><i class="sb-icon " style="--icon:url(/assets/icons/credit-card.svg)"></i></span></span><span class="font-semibold">Payment tools</span></div><div class="star-card !p-4 flex items-center gap-3"><span class="text-2xl"><span class="sb-sticker sm"><i class="sb-icon " style="--icon:url(/assets/icons/trending-up.svg)"></i></span></span><span class="font-semibold">Ad accounts</span></div></div></div></section>
+<section id="toolkit" class="py-20"><div class="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8"><div class="text-center max-w-2xl mx-auto mb-12"><span class="inline-block text-xs font-bold uppercase tracking-wider text-[#f59e0b] mb-4">OUR TOOLKIT</span><h2 class="text-3xl sm:text-4xl font-black">The <span class="sb-grad">best tools</span> behind every system</h2><p class="mt-4 text-[#64748b]">One shared core stack across all six services, plus specialist tools added only where a project needs them.</p></div>
+<div class="star-card text-center !p-8 mb-10 max-w-3xl mx-auto"><span class="inline-block mb-3"><span class="sb-sticker sm"><i class="sb-icon " style="--icon:url(/assets/icons/quote.svg)"></i></span></span><p class="text-xl sm:text-2xl font-bold leading-snug">&ldquo;The right tools, at an affordable price, built to a high standard.&rdquo;</p><p class="mt-3 text-sm text-[#64748b]">Our promise on every project</p></div>
+<div class="grid sm:grid-cols-3 gap-4 mb-12">
+<div class="star-card !p-5 flex items-center gap-4"><span class="sb-sticker sm"><i class="sb-icon " style="--icon:url(/assets/icons/sparkles.svg)"></i></span><div><p class="font-bold">Best-in-class tools</p><p class="text-sm text-[#64748b]">Proven, reliable platforms</p></div></div>
+<div class="star-card !p-5 flex items-center gap-4"><span class="sb-sticker sm"><i class="sb-icon " style="--icon:url(/assets/icons/wallet.svg)"></i></span><div><p class="font-bold">Affordable</p><p class="text-sm text-[#64748b]">You only pay for what you need</p></div></div>
+<div class="star-card !p-5 flex items-center gap-4"><span class="sb-sticker sm"><i class="sb-icon " style="--icon:url(/assets/icons/shield-check.svg)"></i></span><div><p class="font-bold">Top-quality work</p><p class="text-sm text-[#64748b]">Built, tested and checked</p></div></div></div>
+<p class="text-center text-xs font-bold uppercase tracking-wider text-[#f59e0b] mb-4">Core stack &mdash; behind every service</p><div class="tool-grid"><div class="tool-tile"><i class="sb-icon tool-logo" style="--icon:url(/assets/tools/n8n.svg);color:#ea4b71"></i><b>n8n</b><small>Workflow automation</small></div><div class="tool-tile"><i class="sb-icon tool-logo" style="--icon:url(/assets/tools/docker.svg);color:#2496ed"></i><b>Docker</b><small>Build &amp; testing</small></div><div class="tool-tile"><i class="sb-icon tool-logo" style="--icon:url(/assets/tools/postgresql.svg);color:#6a8cf0"></i><b>PostgreSQL</b><small>Campaign &amp; workflow data</small></div><div class="tool-tile"><i class="sb-icon tool-logo" style="--icon:url(/assets/tools/googlesheets.svg);color:#34a853"></i><b>Google Sheets</b><small>Lead review &amp; tracking</small></div><div class="tool-tile"><i class="sb-icon tool-logo" style="--icon:url(/assets/tools/gmail.svg);color:#ea4335"></i><b>Gmail</b><small>Outreach &amp; replies</small></div><div class="tool-tile"><i class="sb-icon tool-logo" style="--icon:url(/assets/tools/notion.svg);color:#e8ecff"></i><b>Notion</b><small>Docs &amp; SOPs</small></div><div class="tool-tile"><i class="sb-icon tool-logo" style="--icon:url(/assets/tools/calendly.svg);color:#4d9bff"></i><b>Calendly</b><small>Call booking</small></div><div class="tool-tile"><i class="sb-icon tool-logo" style="--icon:url(/assets/tools/vercel.svg);color:#e8ecff"></i><b>Vercel</b><small>Hosting &amp; demos</small></div></div>
+<p class="text-center text-xs font-bold uppercase tracking-wider text-[#f59e0b] mt-10 mb-4">Specialist tools &mdash; added per service</p><div class="tool-grid"><div class="tool-tile"><i class="sb-icon tool-logo" style="--icon:url(/assets/icons/zap.svg);color:#f55036"></i><b>Groq</b><small>Fast AI text &amp; research</small></div><div class="tool-tile"><i class="sb-icon tool-logo" style="--icon:url(/assets/tools/hubspot.svg);color:#ff7a59"></i><b>HubSpot</b><small>CRM &amp; pipeline</small></div><div class="tool-tile"><i class="sb-icon tool-logo" style="--icon:url(/assets/icons/phone.svg);color:#f22f46"></i><b>Twilio</b><small>Phone numbers</small></div><div class="tool-tile"><i class="sb-icon tool-logo" style="--icon:url(/assets/icons/mic.svg);color:#5dfeca"></i><b>Vapi</b><small>Voice AI agents</small></div><div class="tool-tile"><i class="sb-icon tool-logo" style="--icon:url(/assets/tools/openstreetmap.svg);color:#7ebc6f"></i><b>OpenStreetMap</b><small>Lead sourcing</small></div><div class="tool-tile"><i class="sb-icon tool-logo" style="--icon:url(/assets/tools/looker.svg);color:#4285f4"></i><b>Looker Studio</b><small>Client reporting</small></div></div>
+<p class="mt-8 text-center text-sm text-[#64748b]">We choose the right tools for each project, so you never pay for software you don&rsquo;t need.</p></div></section>
+<section class="py-20"><div class="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8"><div class="text-center max-w-2xl mx-auto mb-12"><span class="inline-block text-xs font-bold uppercase tracking-wider text-[#f59e0b] mb-4">GROWTH, WITHOUT THE EXTRA HOURS</span><h2 class="text-3xl sm:text-4xl font-black">Grow faster in the new era of <span class="sb-grad">automation &amp; AI</span></h2><p class="mt-4 text-[#64748b]">Automation, AI agents, RAG and LLMs handle the repetitive work, so your business grows without your workload growing with it.</p></div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="star-card"><span class="sb-sticker"><i class="sb-icon " style="--icon:url(/assets/icons/workflow.svg)"></i></span><h3 class="text-xl font-bold mt-4">Automation</h3><p class="mt-2 text-[#64748b]">Workflows that move leads, bookings and follow-ups between your tools with no manual copying.</p></div>
+<div class="star-card"><span class="sb-sticker"><i class="sb-icon " style="--icon:url(/assets/icons/bot.svg)"></i></span><h3 class="text-xl font-bold mt-4">AI agents &amp; chatbots</h3><p class="mt-2 text-[#64748b]">Assistants that answer customers, capture enquiries and book appointments around the clock.</p></div>
+<div class="star-card"><span class="sb-sticker"><i class="sb-icon " style="--icon:url(/assets/icons/database.svg)"></i></span><h3 class="text-xl font-bold mt-4">RAG knowledge assistants</h3><p class="mt-2 text-[#64748b]">Answers grounded in your own documents, prices and FAQs, so replies stay accurate and on-brand.</p></div>
+<div class="star-card"><span class="sb-sticker"><i class="sb-icon " style="--icon:url(/assets/icons/brain-circuit.svg)"></i></span><h3 class="text-xl font-bold mt-4">LLM-powered workflows</h3><p class="mt-2 text-[#64748b]">Drafting, research, summarising and sorting handled by language models, with your team approving the result.</p></div>
+<div class="star-card"><span class="sb-sticker"><i class="sb-icon " style="--icon:url(/assets/icons/mic.svg)"></i></span><h3 class="text-xl font-bold mt-4">Voice AI</h3><p class="mt-2 text-[#64748b]">Calls answered after hours, details captured and your team alerted for a morning follow-up.</p></div>
+<div class="star-card"><span class="sb-sticker"><i class="sb-icon " style="--icon:url(/assets/icons/chart-column.svg)"></i></span><h3 class="text-xl font-bold mt-4">Reporting &amp; insight</h3><p class="mt-2 text-[#64748b]">Clear numbers on enquiries, bookings and replies, so you can see what is working.</p></div>
+</div>
+<div class="mt-12 flex flex-wrap justify-center gap-3"><span class="biz-chip"><i class="sb-icon " style="--icon:url(/assets/icons/stethoscope.svg)"></i>Dental &amp; health clinics</span><span class="biz-chip"><i class="sb-icon " style="--icon:url(/assets/icons/landmark.svg)"></i>Real estate</span><span class="biz-chip"><i class="sb-icon " style="--icon:url(/assets/icons/shopping-bag.svg)"></i>Online stores</span><span class="biz-chip"><i class="sb-icon " style="--icon:url(/assets/icons/briefcase.svg)"></i>Agencies</span><span class="biz-chip"><i class="sb-icon " style="--icon:url(/assets/icons/scissors.svg)"></i>Salons &amp; service pros</span><span class="biz-chip"><i class="sb-icon " style="--icon:url(/assets/icons/user-round.svg)"></i>Consultants</span><span class="biz-chip"><i class="sb-icon " style="--icon:url(/assets/icons/building-2.svg)"></i>Enterprise teams</span></div>
+<div class="mt-8 text-center flex flex-wrap gap-4 justify-center"><a href="dental.html" class="btn-gold px-8 py-4 rounded-xl">See the dental demo</a><a href="https://cal.id/starion/one-on-one" target="_blank" rel="noopener noreferrer" class="btn-outline px-8 py-4 rounded-xl">Book a 15-Min Meeting</a></div></div></section>
+<section class="py-20"><div class="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 max-w-3xl"><div class="text-center mb-10"><span class="inline-block text-xs font-bold uppercase tracking-wider text-[#f59e0b] mb-4">FAQ</span><h2 class="text-3xl sm:text-4xl font-black">Common questions</h2></div><div class="space-y-4"><details class="star-card !p-5 group"><summary class="cursor-pointer font-semibold text-lg list-none flex justify-between">Who is Starion AI for?<span class="text-[#f59e0b]">+</span></summary><p class="mt-3 text-[#64748b] leading-7">Small and mid-sized businesses that want more enquiries, faster replies and less repetitive admin: clinics, agencies, e-commerce stores and service businesses.</p></details><details class="star-card !p-5 group"><summary class="cursor-pointer font-semibold text-lg list-none flex justify-between">Do I need to be technical?<span class="text-[#f59e0b]">+</span></summary><p class="mt-3 text-[#64748b] leading-7">No. We handle the build, hosting and connections. You get a simple walkthrough and a person to contact.</p></details><details class="star-card !p-5 group"><summary class="cursor-pointer font-semibold text-lg list-none flex justify-between">How long does setup take?<span class="text-[#f59e0b]">+</span></summary><p class="mt-3 text-[#64748b] leading-7">Most single systems such as StarBot or StarBook go live within 1 to 2 weeks. Larger workflows are scoped on the call.</p></details><details class="star-card !p-5 group"><summary class="cursor-pointer font-semibold text-lg list-none flex justify-between">Is there a contract?<span class="text-[#f59e0b]">+</span></summary><p class="mt-3 text-[#64748b] leading-7">Setup is a one-off fee and monthly plans are rolling, so you can cancel with notice. Details are in our <a href="terms.html" class="text-[#f59e0b] underline">Terms</a>.</p></details><details class="star-card !p-5 group"><summary class="cursor-pointer font-semibold text-lg list-none flex justify-between">How do you handle data?<span class="text-[#f59e0b]">+</span></summary><p class="mt-3 text-[#64748b] leading-7">We collect only what a system needs to work and never sell it. See our <a href="privacy.html" class="text-[#f59e0b] underline">Privacy Policy</a> for the full details.</p></details></div></div></section>
+<section class="py-20"><div class="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8"><div class="star-card text-center !p-12"><h2 class="text-3xl sm:text-4xl font-black">Book a free 15-minute <span class="sb-grad">ROI audit</span></h2><p class="mt-4 text-[#64748b] max-w-xl mx-auto">We’ll calculate exactly how much money you’re losing to manual work, and show you how we fix it.</p><div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center"><a href="https://cal.id/starion/one-on-one" target="_blank" rel="noopener noreferrer" class="btn-gold px-8 py-4 rounded-xl">Book a free ROI audit</a><a href="contact.html" class="btn-outline px-8 py-4 rounded-xl">Send a Message</a></div></div></div></section>
+</main>
+<section id="founder" class="v5-sec"><div class="v5-wrap"><div class="v5-founder">
+  <div class="v5-photo"><div><!-- Replace with: <img src="assets/images/founder.jpg" alt="Piyanshu Singh, founder of Starion AI"> -->Your photo goes here<br>assets/images/founder.jpg</div></div>
+  <div><span class="v5-kicker">Who builds it</span><h2 class="v5-h2">Built by an Engineer, Not a Salesman.</h2>
+    <p class="v5-lead" style="margin-top:1rem">Piyanshu Singh personally architects every system. The person you talk to on the call is the person who builds and monitors your receptionist.</p>
+    <div class="v5-hero-cta"><a href="about.html" class="v5-btn v5-btn-ghost">About Starion</a><a href="https://cal.id/starion/one-on-one" target="_blank" rel="noopener noreferrer" class="v5-btn v5-btn-grad">Book a call</a></div></div>
+</div></div></section>
+<footer class="border-t border-[#e2e8f0] pt-16 pb-10"><div class="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8"><div class="grid md:grid-cols-4 gap-10 text-[15px]">
+<div><p class="font-bold text-lg sb-grad inline-block">AI Automation That Shines</p><p class="mt-3 text-[#64748b]">Enterprise-grade AI systems that help businesses get more customers and eliminate manual work.</p><p class="mt-3 text-xs text-[#64748b]">Serving businesses globally • Founded by Piyanshu Singh</p></div>
+<div><p class="font-bold mb-3">Services</p><ul class="space-y-2 text-[#64748b]"><li><a href="starbook.html">StarBook — Bookings</a></li><li><a href="starmail.html">StarMail — Email Marketing</a></li><li><a href="starflow.html">StarFlow — Workflows</a></li><li><a href="starads.html">StarAds — AI-Managed Ads</a></li>
+<li><a href="outbound.html">Starion Outbound — AI SDR</a></li>
+<li><a href="core.html">Starion Core — Revenue System</a></li><li><a href="dental.html">Live demo: Dental receptionist</a></li></ul></div>
+<div><p class="font-bold mb-3">Company</p><ul class="space-y-2 text-[#64748b]"><li><a href="about.html">About Us</a></li><li><a href="case-studies.html">Case Studies</a></li><li><a href="services.html">Services Overview</a></li><li><a href="contact.html">Contact</a></li><li><a href="https://starion-ai.notion.site" target="_blank" rel="noopener noreferrer">Knowledge Base (Notion)</a></li></ul></div>
+<div><p class="font-bold mb-3">Get in Touch</p><ul class="space-y-2 text-[#64748b]"><li>Email: <a href="mailto:hello@starion.site">hello@starion.site</a></li><li>Phone / WhatsApp: <a href="tel:+919990688580">+91 9990688580</a></li><li><a href="https://cal.id/starion/one-on-one" target="_blank" rel="noopener noreferrer">Schedule 15-Min Meeting →</a></li></ul></div></div>
+<div class="mt-12 pt-8 border-t border-[#e2e8f0] flex flex-col sm:flex-row items-center justify-between text-xs text-[#64748b] gap-4"><p>© 2026 Starion AI. Enterprise AI Engineering.</p></div></div></footer>
+
+  <script>
+    const nav = document.querySelector('.site-nav');
+    const handleNavScroll = () => {
+      if (window.scrollY > 20) nav?.classList.add('scrolled');
+      else nav?.classList.remove('scrolled');
+    };
+    window.addEventListener('scroll', handleNavScroll);
+    handleNavScroll();
+  </script>
+<script src="assets/js/demo-chat.js" defer></script>
+<script>(function(){var b=document.getElementById('mobile-toggle'),d=document.getElementById('mobile-drawer');if(b&&d)b.addEventListener('click',function(){d.classList.toggle('hidden')})})();</script><script src="assets/js/starion-v5.js" defer></script>
+</body>
+</html>

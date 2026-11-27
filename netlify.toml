@@ -1,0 +1,23 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/chat"
+  to = "/.netlify/functions/chat"
+  status = 200
+
+[[redirects]]
+  from = "/dental"
+  to = "/dental.html"
+  status = 200
+
+[[redirects]]
+  from = "/dentist"
+  to = "/dental"
+  status = 301
+
+[[redirects]]
+  from = "/denal"
+  to = "/dental"
+  status = 301

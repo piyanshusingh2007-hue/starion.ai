@@ -1,0 +1,7 @@
+{
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/dentist", "destination": "/dental", "permanent": true },
+    { "source": "/denal", "destination": "/dental", "permanent": true }
+  ]
+}
